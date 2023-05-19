@@ -1,0 +1,8 @@
+FROM python:3.9-alpine
+
+RUN mkdir /app
+WORKDIR /app
+
+COPY generate_logs.py /app
+
+CMD ["python", "generate_logs.py"]
