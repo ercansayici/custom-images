@@ -1,1 +1,5 @@
-ercandevops/hc-vault-test-logs
+ercandevops/hc-vault-test-logs:sealed
+
+docker build -t ercandevops/hc-vault-test-logs:sealed .
+
+docker build -t ercandevops/hc-vault-test-logs:unsealed -f dockerfile_unsealed .

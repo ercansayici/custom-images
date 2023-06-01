@@ -1,8 +1,7 @@
-FROM python:3.9-alpine
+FROM amd64/python:3.9
 
 RUN mkdir /app
 WORKDIR /app
 
 COPY generate_logs.py /app
-
 CMD ["python", "generate_logs.py"]
